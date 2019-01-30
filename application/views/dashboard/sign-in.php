@@ -54,7 +54,7 @@
           </p>
           
           <!-- Form -->
-         <?php echo validation_errors(); ?>
+        <?php echo validation_errors(); ?>
         <?php echo form_open('signin/signin'); ?>
 
             <!-- Email address -->

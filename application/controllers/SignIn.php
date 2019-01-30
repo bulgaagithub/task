@@ -29,7 +29,7 @@ class SignIn extends CI_Controller {
 	}
 	public function index()
 	{
-		$this->load->view('dashboard/sign-in');
+		$this->load->view('admin/login');
 	}
 
 	public function signin() {
@@ -69,11 +69,6 @@ class SignIn extends CI_Controller {
 		    $this->admin_model->save($username,$email,$password);
 		    redirect('/');
 		}
-	}
-
-	public function auth() {
-		echo "Hello";
-		redirect('home');
 	}
 
 	public function signout() {

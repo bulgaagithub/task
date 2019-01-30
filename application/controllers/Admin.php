@@ -14,7 +14,7 @@ class Admin extends CI_Controller {
 	public function index()
 	{
 		if (isset($this->session->userdata['signin'])) {
-			$this->load->view('dashboard/dashboard');
+			$this->load->view('admin/dashboard');
 		} else {
 			redirect('signin');
 		}
@@ -31,7 +31,4 @@ class Admin extends CI_Controller {
 		print_r($data);
 	}
 
-	public function login() {
-		
-	}
 }
