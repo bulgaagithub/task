@@ -402,6 +402,7 @@
     <script src="../assets/admin/libs/quill/dist/quill.min.js"></script>
     <script src="../assets/admin/libs/dropzone/dist/min/dropzone.min.js"></script>
     <script src="../assets/admin/libs/select2/dist/js/select2.min.js"></script>
+    
 
     <!-- Theme JS -->
     <script src="../assets/admin/js/theme.min.js"></script>

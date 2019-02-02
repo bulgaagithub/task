@@ -88,81 +88,7 @@
         </div>
         <div class="navbar-right">
             <ul class="nav navbar-nav no-borders">
-                <li class="dropdown">
-                    <a class="dropdown-toggle" href="#" data-toggle="dropdown">
-                        <i class="pe-7s-speaker"></i>
-                    </a>
-                    <ul class="dropdown-menu hdropdown notification animated flipInX">
-                        <li>
-                            <a>
-                                <span class="label label-success">NEW</span> It is a long established.
-                            </a>
-                        </li>
-                        <li>
-                            <a>
-                                <span class="label label-warning">WAR</span> There are many variations.
-                            </a>
-                        </li>
-                        <li>
-                            <a>
-                                <span class="label label-danger">ERR</span> Contrary to popular belief.
-                            </a>
-                        </li>
-                        <li class="summary"><a href="#">See all notifications</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a class="dropdown-toggle" href="#" data-toggle="dropdown">
-                        <i class="pe-7s-keypad"></i>
-                    </a>
-
-                    <div class="dropdown-menu hdropdown bigmenu animated flipInX">
-                        <table>
-                            <tbody>
-                            <tr>
-                                <td>
-                                    <a href="projects.html">
-                                        <i class="pe pe-7s-portfolio text-info"></i>
-                                        <h5>Projects</h5>
-                                    </a>
-                                </td>
-                                <td>
-                                    <a href="mailbox.html">
-                                        <i class="pe pe-7s-mail text-warning"></i>
-                                        <h5>Email</h5>
-                                    </a>
-                                </td>
-                                <td>
-                                    <a href="contacts.html">
-                                        <i class="pe pe-7s-users text-success"></i>
-                                        <h5>Contacts</h5>
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <a href="forum.html">
-                                        <i class="pe pe-7s-comment text-info"></i>
-                                        <h5>Forum</h5>
-                                    </a>
-                                </td>
-                                <td>
-                                    <a href="analytics.html">
-                                        <i class="pe pe-7s-graph1 text-danger"></i>
-                                        <h5>Analytics</h5>
-                                    </a>
-                                </td>
-                                <td>
-                                    <a href="file_manager.html">
-                                        <i class="pe pe-7s-box1 text-success"></i>
-                                        <h5>Files</h5>
-                                    </a>
-                                </td>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </li>
+            
                 <li class="dropdown">
                     <a class="dropdown-toggle label-menu-corner" href="#" data-toggle="dropdown">
                         <i class="pe-7s-mail"></i>
@@ -201,7 +127,7 @@
                     </a>
                 </li>
                 <li class="dropdown">
-                    <a href="login.html">
+                    <a href="signin/signout">
                         <i class="pe-7s-upload pe-rotate-90"></i>
                     </a>
                 </li>
@@ -253,21 +179,10 @@
                 <a href="analytics.html"> <span class="nav-label">Analytics</span><span class="label label-warning pull-right">NEW</span> </a>
             </li>
             <li>
-                <a href="#"><span class="nav-label">Матемтик</span><span class="fa arrow"></span> </a>
+                <a href="#"><span class="nav-label">Математик</span><span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level">
-                    <li><a href="panels.html">Бодлого</a></li>
+                    <li><a href="math">Бодлого</a></li>
                     <li><a href="typography.html">Ангилал</a></li>
-                    <li><a href="buttons.html">Colors &amp; Buttons</a></li>
-                    <li><a href="components.html">Components</a></li>
-                    <li><a href="alerts.html">Alerts</a></li>
-                    <li><a href="modals.html">Modals</a></li>
-                    <li><a href="loading_buttons.html">Loading buttons</a></li>
-                    <li><a href="draggable.html">Draggable panels</a></li>
-                    <li><a href="code_editor.html">Code editor</a></li>
-                    <li><a href="email_template.html">Email template</a></li>
-                    <li><a href="nestable_list.html">List</a></li>
-                    <li><a href="tour.html">Tour</a></li>
-                    <li><a href="icons.html">Icons library</a></li>
                 </ul>
             </li>
             <li>
@@ -275,26 +190,6 @@
                 <ul class="nav nav-second-level">
                     <li><a href="contacts.html">Бодлого</a></li>
                     <li><a href="projects.html">Ангилал</a></li>
-                    <li><a href="project.html">Project detail</a></li>
-                    <li><a href="app_plans.html">App plans</a></li>
-                    <li><a href="social_board.html">Social board</a></li>
-                    <li><a href="faq.html">FAQ</a></li>
-                    <li><a href="timeline.html">Timeline</a></li>
-                    <li><a href="notes.html">Notes</a></li>
-                    <li><a href="profile.html">Profile</a></li>
-                    <li><a href="mailbox.html">Mailbox</a></li>
-                    <li><a href="mailbox_compose.html">Email compose</a></li>
-                    <li><a href="mailbox_view.html">Email view</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="blog_details.html">Blog article</a></li>
-                    <li><a href="forum.html">Forum</a></li>
-                    <li><a href="forum_details.html">Forum details</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="calendar.html">Calendar</a></li>
-                    <li><a href="invoice.html">Invoice</a></li>
-                    <li><a href="file_manager.html">File manager</a></li>
-                    <li><a href="chat_view.html">Chat view</a></li>
-                    <li><a href="search.html">Search view</a></li>
                 </ul>
             </li>
             <li>
@@ -302,9 +197,6 @@
                 <ul class="nav nav-second-level">
                     <li><a href="chartjs.html">Бодлого</a></li>
                     <li><a href="flot.html">Ангилал</a></li>
-                    <li><a href="inline.html">Inline graphs</a></li>
-                    <li><a href="chartist.html">Chartist</a></li>
-                    <li><a href="c3.html">C3 Charts</a></li>
                 </ul>
             </li>
         </ul>
@@ -386,28 +278,11 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-3">
-                <div class="hpanel">
-                    <div class="panel-body text-center h-200">
-                        <i class="pe-7s-graph1 fa-4x"></i>
-
-                        <h1 class="m-xs">$1 206,90</h1>
-
-                        <h3 class="font-extra-bold no-margins text-success">
-                            All Income
-                        </h3>
-                        <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit vestibulum.</small>
-                    </div>
-                    <div class="panel-footer">
-                        This is standard panel footer
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3">
+            <div class="col-lg-4">
                 <div class="hpanel stats">
                     <div class="panel-body h-200">
                         <div class="stats-title pull-left">
-                            <h4>Users Activity</h4>
+                            <h4>Математик</h4>
                         </div>
                         <div class="stats-icon pull-right">
                             <i class="pe-7s-share fa-4x"></i>
@@ -443,11 +318,51 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3">
+            <div class="col-lg-4">
                 <div class="hpanel stats">
                     <div class="panel-body h-200">
                         <div class="stats-title pull-left">
-                            <h4>Page Views</h4>
+                            <h4>Физик</h4>
+                        </div>
+                        <div class="stats-icon pull-right">
+                            <i class="pe-7s-share fa-4x"></i>
+                        </div>
+                        <div class="m-t-xl">
+                            <h3 class="m-b-xs">210</h3>
+                    <span class="font-bold no-margins">
+                        Social users
+                    </span>
+
+                            <div class="progress m-t-xs full progress-small">
+                                <div style="width: 55%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="55"
+                                     role="progressbar" class=" progress-bar progress-bar-success">
+                                    <span class="sr-only">35% Complete (success)</span>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-xs-6">
+                                    <small class="stats-label">Pages / Visit</small>
+                                    <h4>7.80</h4>
+                                </div>
+
+                                <div class="col-xs-6">
+                                    <small class="stats-label">% New Visits</small>
+                                    <h4>76.43%</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-footer">
+                        This is standard panel footer
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="hpanel stats">
+                    <div class="panel-body h-200">
+                        <div class="stats-title pull-left">
+                            <h4>Хими</h4>
                         </div>
                         <div class="stats-icon pull-right">
                             <i class="pe-7s-monitor fa-4x"></i>
@@ -462,38 +377,6 @@
                                 Lorem Ipsum is simply dummy text of the printing and <strong>typesetting
                                 industry</strong>. Lorem Ipsum has been.
                             </small>
-                        </div>
-                    </div>
-                    <div class="panel-footer">
-                        This is standard panel footer
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3">
-                <div class="hpanel stats">
-                    <div class="panel-body h-200">
-                        <div class="stats-title pull-left">
-                            <h4>Today income</h4>
-                        </div>
-                        <div class="stats-icon pull-right">
-                            <i class="pe-7s-cash fa-4x"></i>
-                        </div>
-                        <div class="clearfix"></div>
-                        <div class="flot-chart">
-                            <div class="flot-chart-content" id="flot-income-chart"></div>
-                        </div>
-                        <div class="m-t-xs">
-
-                            <div class="row">
-                                <div class="col-xs-5">
-                                    <small class="stat-label">Today</small>
-                                    <h4>$230,00 </h4>
-                                </div>
-                                <div class="col-xs-7">
-                                    <small class="stat-label">Last week</small>
-                                    <h4>$7 980,60 <i class="fa fa-level-up text-success"></i></h4>
-                                </div>
-                            </div>
                         </div>
                     </div>
                     <div class="panel-footer">
@@ -688,118 +571,6 @@
     </div>
 
     <!-- Right sidebar -->
-    <div id="right-sidebar" class="animated fadeInRight">
-
-        <div class="p-m">
-            <button id="sidebar-close" class="right-sidebar-toggle sidebar-button btn btn-default m-b-md"><i class="pe pe-7s-close"></i>
-            </button>
-            <div>
-                <span class="font-bold no-margins"> Analytics </span>
-                <br>
-                <small> Lorem Ipsum is simply dummy text of the printing simply all dummy text.</small>
-            </div>
-            <div class="row m-t-sm m-b-sm">
-                <div class="col-lg-6">
-                    <h3 class="no-margins font-extra-bold text-success">300,102</h3>
-
-                    <div class="font-bold">98% <i class="fa fa-level-up text-success"></i></div>
-                </div>
-                <div class="col-lg-6">
-                    <h3 class="no-margins font-extra-bold text-success">280,200</h3>
-
-                    <div class="font-bold">98% <i class="fa fa-level-up text-success"></i></div>
-                </div>
-            </div>
-            <div class="progress m-t-xs full progress-small">
-                <div style="width: 25%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="25" role="progressbar"
-                     class=" progress-bar progress-bar-success">
-                    <span class="sr-only">35% Complete (success)</span>
-                </div>
-            </div>
-        </div>
-        <div class="p-m bg-light border-bottom border-top">
-            <span class="font-bold no-margins"> Social talks </span>
-            <br>
-            <small> Lorem Ipsum is simply dummy text of the printing simply all dummy text.</small>
-            <div class="m-t-md">
-                <div class="social-talk">
-                    <div class="media social-profile clearfix">
-                        <a class="pull-left">
-                            <img src="images/a1.jpg" alt="profile-picture">
-                        </a>
-
-                        <div class="media-body">
-                            <span class="font-bold">John Novak</span>
-                            <small class="text-muted">21.03.2015</small>
-                            <div class="social-content small">
-                                Injected humour, or randomised words which don't look even slightly believable.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="social-talk">
-                    <div class="media social-profile clearfix">
-                        <a class="pull-left">
-                            <img src="images/a3.jpg" alt="profile-picture">
-                        </a>
-
-                        <div class="media-body">
-                            <span class="font-bold">Mark Smith</span>
-                            <small class="text-muted">14.04.2015</small>
-                            <div class="social-content">
-                                Many desktop publishing packages and web page editors.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="social-talk">
-                    <div class="media social-profile clearfix">
-                        <a class="pull-left">
-                            <img src="images/a4.jpg" alt="profile-picture">
-                        </a>
-
-                        <div class="media-body">
-                            <span class="font-bold">Marica Morgan</span>
-                            <small class="text-muted">21.03.2015</small>
-
-                            <div class="social-content">
-                                There are many variations of passages of Lorem Ipsum available, but the majority have
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="p-m">
-            <span class="font-bold no-margins"> Sales in last week </span>
-            <div class="m-t-xs">
-                <div class="row">
-                    <div class="col-xs-6">
-                        <small>Today</small>
-                        <h4 class="m-t-xs">$170,20 <i class="fa fa-level-up text-success"></i></h4>
-                    </div>
-                    <div class="col-xs-6">
-                        <small>Last week</small>
-                        <h4 class="m-t-xs">$580,90 <i class="fa fa-level-up text-success"></i></h4>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-6">
-                        <small>Today</small>
-                        <h4 class="m-t-xs">$620,20 <i class="fa fa-level-up text-success"></i></h4>
-                    </div>
-                    <div class="col-xs-6">
-                        <small>Last week</small>
-                        <h4 class="m-t-xs">$140,70 <i class="fa fa-level-up text-success"></i></h4>
-                    </div>
-                </div>
-            </div>
-            <small> Lorem Ipsum is simply dummy text of the printing simply all dummy text.
-                Many desktop publishing packages and web page editors.
-            </small>
-        </div>
-
-    </div>
 
     <!-- Footer-->
     <footer class="footer">

@@ -27,7 +27,7 @@ class Math extends CI_Controller {
 
 	public function index()
 	{
-		$this->load->view('math/task_list');
+		$this->load->view('math/task');
 		// $this->load->helper('url');
 		// if (isset($this->session->userdata['login'])) {
 		// 	$this->load->view('template/dashboard');
@@ -51,7 +51,8 @@ class Math extends CI_Controller {
                 show_404();
         }
 
-		$this->load->view('math/new_task',$data);
+		// $this->load->view('math/new_task',$data);
+		$this->load->view('math/task_new',$data);
 	}
 
 	public function save_task() {
