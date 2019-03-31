@@ -6,7 +6,7 @@ class CLV_model extends CI_Model {
          $this->load->database();
     }
 
-    public function get_category($status = 'Mathematic') {
+    public function get_category($status = FALSE) {
 
     	if ($status === NULL)
         {
@@ -50,6 +50,18 @@ class CLV_model extends CI_Model {
     }    
 
     // Task Insert, Update, Delete, Select 
+
+     public function get_task($type = FALSE) {
+
+    	if ($type === NULL)
+        {
+            $query = $this->db->get('task');
+           	return $query->result_array();
+        }
+
+        $query = $this->db->get_where('task', array('type' => $type));
+        return $query->result_array();
+    }
 
     public function set_task($data = array()) {
         $insert = $this->db->insert('task',$data);

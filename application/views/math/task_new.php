@@ -30,6 +30,8 @@
     <link rel="stylesheet" href="../assets/adminv2/fonts/pe-icon-7-stroke/css/helper.css" />
     <link rel="stylesheet" href="../assets/adminv2/styles/style.css">
 
+     <script src="../assets/adminv2/plugins/ckeditor/ckeditor.js"></script>
+
 </head>
 <body class="fixed-navbar sidebar-scroll">
 
@@ -45,19 +47,14 @@
     </div>
     <div id="logo" class="light-version">
         <span>
-            Homer Theme
+            ESH.MN
         </span>
     </div>
     <nav role="navigation">
         <div class="header-link hide-menu"><i class="fa fa-bars"></i></div>
         <div class="small-logo">
-            <span class="text-primary">HOMER APP</span>
+            <span class="text-primary">ESH.MN</span>
         </div>
-        <form role="search" class="navbar-form-custom" method="post" action="#">
-            <div class="form-group">
-                <input type="text" placeholder="Search something special" class="form-control" name="search">
-            </div>
-        </form>
         <div class="mobile-menu">
             <button type="button" class="navbar-toggle mobile-menu-toggle" data-toggle="collapse" data-target="#mobile-collapse">
                 <i class="fa fa-chevron-down"></i>
@@ -65,94 +62,14 @@
             <div class="collapse mobile-navbar" id="mobile-collapse">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a class="" href="login.html">Login</a>
-                    </li>
-                    <li>
-                        <a class="" href="login.html">Logout</a>
-                    </li>
-                    <li>
-                        <a class="" href="profile.html">Profile</a>
+                        <a class="" href="login.html">Гарах</a>
                     </li>
                 </ul>
             </div>
         </div>
         <div class="navbar-right">
             <ul class="nav navbar-nav no-borders">
-                <li class="dropdown">
-                    <a class="dropdown-toggle" href="#" data-toggle="dropdown">
-                        <i class="pe-7s-speaker"></i>
-                    </a>
-                    <ul class="dropdown-menu hdropdown notification animated flipInX">
-                        <li>
-                            <a>
-                                <span class="label label-success">NEW</span> It is a long established.
-                            </a>
-                        </li>
-                        <li>
-                            <a>
-                                <span class="label label-warning">WAR</span> There are many variations.
-                            </a>
-                        </li>
-                        <li>
-                            <a>
-                                <span class="label label-danger">ERR</span> Contrary to popular belief.
-                            </a>
-                        </li>
-                        <li class="summary"><a href="#">See all notifications</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a class="dropdown-toggle" href="#" data-toggle="dropdown">
-                        <i class="pe-7s-keypad"></i>
-                    </a>
-
-                    <div class="dropdown-menu hdropdown bigmenu animated flipInX">
-                        <table>
-                            <tbody>
-                            <tr>
-                                <td>
-                                    <a href="projects.html">
-                                        <i class="pe pe-7s-portfolio text-info"></i>
-                                        <h5>Projects</h5>
-                                    </a>
-                                </td>
-                                <td>
-                                    <a href="mailbox.html">
-                                        <i class="pe pe-7s-mail text-warning"></i>
-                                        <h5>Email</h5>
-                                    </a>
-                                </td>
-                                <td>
-                                    <a href="contacts.html">
-                                        <i class="pe pe-7s-users text-success"></i>
-                                        <h5>Contacts</h5>
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <a href="forum.html">
-                                        <i class="pe pe-7s-comment text-info"></i>
-                                        <h5>Forum</h5>
-                                    </a>
-                                </td>
-                                <td>
-                                    <a href="analytics.html">
-                                        <i class="pe pe-7s-graph1 text-danger"></i>
-                                        <h5>Analytics</h5>
-                                    </a>
-                                </td>
-                                <td>
-                                    <a href="file_manager.html">
-                                        <i class="pe pe-7s-box1 text-success"></i>
-                                        <h5>Files</h5>
-                                    </a>
-                                </td>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </li>
+                
                 <li class="dropdown">
                     <a class="dropdown-toggle label-menu-corner" href="#" data-toggle="dropdown">
                         <i class="pe-7s-mail"></i>
@@ -185,13 +102,8 @@
                         <li class="summary"><a href="#">See All Messages</a></li>
                     </ul>
                 </li>
-                <li>
-                    <a href="#" id="sidebar" class="right-sidebar-toggle">
-                        <i class="pe-7s-upload pe-7s-news-paper"></i>
-                    </a>
-                </li>
                 <li class="dropdown">
-                    <a href="login.html">
+                    <a href="../signin/signout">
                         <i class="pe-7s-upload pe-rotate-90"></i>
                     </a>
                 </li>
@@ -209,18 +121,14 @@
             </a>
 
             <div class="stats-label text-color">
-                <span class="font-extra-bold font-uppercase">Robert Razer</span>
+                <span class="font-extra-bold font-uppercase">Admin</span>
 
                 <div class="dropdown">
                     <a class="dropdown-toggle" href="#" data-toggle="dropdown">
-                        <small class="text-muted">Founder of App <b class="caret"></b></small>
+                        <small class="text-muted">ESH.MN <b class="caret"></b></small>
                     </a>
                     <ul class="dropdown-menu animated flipInX m-t-xs">
-                        <li><a href="contacts.html">Contacts</a></li>
-                        <li><a href="profile.html">Profile</a></li>
-                        <li><a href="analytics.html">Analytics</a></li>
-                        <li class="divider"></li>
-                        <li><a href="login.html">Logout</a></li>
+                        <li><a href="login.html">Гарах</a></li>
                     </ul>
                 </div>
 
@@ -237,123 +145,26 @@
 
         <ul class="nav" id="side-menu">
             <li>
-                <a href="index.html"> <span class="nav-label">Dashboard</span> <span class="label label-success pull-right">v.1</span> </a>
-            </li>
-            <li>
-                <a href="analytics.html"> <span class="nav-label">Analytics</span><span class="label label-warning pull-right">NEW</span> </a>
-            </li>
-            <li>
-                <a href="#"><span class="nav-label">Interface</span><span class="fa arrow"></span> </a>
+                <a href="#"><span class="nav-label">Математик</span><span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level">
-                    <li><a href="panels.html">Panels design</a></li>
-                    <li><a href="typography.html">Typography</a></li>
-                    <li><a href="buttons.html">Colors &amp; Buttons</a></li>
-                    <li><a href="components.html">Components</a></li>
-                    <li><a href="alerts.html">Alerts</a></li>
-                    <li><a href="modals.html">Modals</a></li>
-                    <li><a href="loading_buttons.html">Loading buttons</a></li>
-                    <li><a href="draggable.html">Draggable panels</a></li>
-                    <li><a href="code_editor.html">Code editor</a></li>
-                    <li><a href="email_template.html">Email template</a></li>
-                    <li><a href="nestable_list.html">List</a></li>
-                    <li><a href="tour.html">Tour</a></li>
-                    <li><a href="icons.html">Icons library</a></li>
+                    <li><a href="../math">Бодлого</a></li>
+                    <li><a href="../math/category">Ангилал</a></li>
                 </ul>
             </li>
             <li>
-                <a href="#"><span class="nav-label">App views</span><span class="fa arrow"></span> </a>
+                <a href="#"><span class="nav-label">Физик</span><span class="fa arrow"></span> </a>
                 <ul class="nav nav-second-level">
-                    <li><a href="contacts.html">Contacts</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="project.html">Project detail</a></li>
-                    <li><a href="app_plans.html">App plans</a></li>
-                    <li><a href="social_board.html">Social board</a></li>
-                    <li><a href="faq.html">FAQ</a></li>
-                    <li><a href="timeline.html">Timeline</a></li>
-                    <li><a href="notes.html">Notes</a></li>
-                    <li><a href="profile.html">Profile</a></li>
-                    <li><a href="mailbox.html">Mailbox</a></li>
-                    <li><a href="mailbox_compose.html">Email compose</a></li>
-                    <li><a href="mailbox_view.html">Email view</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="blog_details.html">Blog article</a></li>
-                    <li><a href="forum.html">Forum</a></li>
-                    <li><a href="forum_details.html">Forum details</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="calendar.html">Calendar</a></li>
-                    <li><a href="invoice.html">Invoice</a></li>
-                    <li><a href="file_manager.html">File manager</a></li>
-                    <li><a href="chat_view.html">Chat view</a></li>
-                    <li><a href="search.html">Search view</a></li>
+                    <li><a href="../physics">Бодлого</a></li>
+                    <li><a href="../physics/category">Ангилал</a></li>
                 </ul>
             </li>
             <li>
-                <a href="#"><span class="nav-label">Charts</span><span class="fa arrow"></span> </a>
+                <a href="#"><span class="nav-label">Хими</span><span class="fa arrow"></span> </a>
                 <ul class="nav nav-second-level">
-                    <li><a href="chartjs.html">ChartJs</a></li>
-                    <li><a href="flot.html">Flot charts</a></li>
-                    <li><a href="inline.html">Inline graphs</a></li>
-                    <li><a href="chartist.html">Chartist</a></li>
-                    <li><a href="c3.html">C3 Charts</a></li>
+                    <li><a href="../chemistry">Бодлого</a></li>
+                    <li><a href="../chemistry/category">Ангилал</a></li>
                 </ul>
             </li>
-            <li>
-                <a href="#"><span class="nav-label">Box transitions</span><span class="fa arrow"></span> </a>
-                <ul class="nav nav-second-level">
-                    <li><a href="overview.html"><span class="label label-success pull-right">Start</span> Overview </a>  </li>
-                    <li><a href="transition_two.html">Columns from up</a></li>
-                    <li><a href="transition_one.html">Columns custom</a></li>
-                    <li><a href="transition_three.html">Panels zoom</a></li>
-                    <li><a href="transition_four.html">Rows from down</a></li>
-                    <li><a href="transition_five.html">Rows from right</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#"><span class="nav-label">Common views</span><span class="fa arrow"></span> </a>
-                <ul class="nav nav-second-level">
-                    <li><a href="login.html">Login</a></li>
-                    <li><a href="register.html">Register</a></li>
-                    <li><a href="error_one.html">Error 404</a></li>
-                    <li><a href="error_two.html">Error 505</a></li>
-                    <li><a href="lock.html">Lock screen</a></li>
-                    <li><a href="password_recovery.html">Passwor recovery</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#"><span class="nav-label">Tables</span><span class="fa arrow"></span> </a>
-                <ul class="nav nav-second-level">
-                    <li><a href="tables_design.html">Tables design</a></li>
-                    <li><a href="datatables.html">Data tables</a></li>
-                    <li><a href="footable.html">Foo Table</a></li>
-
-                </ul>
-            </li>
-            <li>
-                <a href="widgets.html"> <span class="nav-label">Widgets</span> <span class="label label-success pull-right">Special</span></a>
-            </li>
-            <li class="active">
-                <a href="#"><span class="nav-label">Forms</span><span class="fa arrow"></span> </a>
-                <ul class="nav nav-second-level">
-                    <li><a href="forms_elements.html">Forms elements</a></li>
-                    <li><a href="forms_extended.html">Forms extended</a></li>
-                    <li><a href="text_editor.html">Text editor</a></li>
-                    <li class="active"><a href="wizard.html">Wizard</a></li>
-                    <li><a href="validation.html">Validation</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="options.html"> <span class="nav-label">Layout options</span></a>
-            </li>
-            <li>
-                <a href="grid_system.html"> <span class="nav-label">Grid system</span></a>
-            </li>
-            <li>
-                <a href="landing_page.html"> <span class="nav-label">Landing page</span></a>
-            </li>
-            <li>
-                <a href="package.html"> <span class="nav-label">Package</span></a>
-            </li>
-
         </ul>
     </div>
 </aside>
@@ -366,19 +177,19 @@
             <div class="panel-body">
                 <div id="hbreadcrumb" class="pull-right">
                     <ol class="hbreadcrumb breadcrumb">
-                        <li><a href="index.html">Dashboard</a></li>
+                        <li><a href="index.html">Удирдлага</a></li>
                         <li>
-                            <span>Forms</span>
+                            <span>Математик</span>
                         </li>
                         <li class="active">
-                            <span>Wizard </span>
+                            <span>Бодлого </span>
                         </li>
                     </ol>
                 </div>
                 <h2 class="font-light m-b-xs">
-                    Wizard
+                    Математик
                 </h2>
-                <small>Build a form with wizard functionality.</small>
+                <small>Математик хичээлийн бодлогын сан</small>
             </div>
         </div>
     </div>
@@ -391,13 +202,12 @@
                 <div class="panel-heading">
                     <div class="panel-tools">
                         <a class="showhide"><i class="fa fa-chevron-up"></i></a>
-                        <a class="closebox"><i class="fa fa-times"></i></a>
                     </div>
-                    Example fo wizard form
+                    Бодлого бүртгэх форм
                 </div>
                 <div class="panel-body">
-
-                    <form name="simpleForm" novalidate id="simpleForm" action="#" method="post">
+<?php echo validation_errors(); ?>
+<?php echo form_open('math/save_task', array('enctype' => 'multipart/form-data', 'id' => 'form', 'method' => 'POST')); ?>
 
                         <div class="tab-content">
                         <div id="step1" class="p-m tab-pane active">
@@ -407,35 +217,31 @@
                                     <div class="row">
                                         <div class="form-group col-lg-6">
                                             <label>Ангилал</label>
-                                            <select class="form-control m-b" name="account">
-                                                <option>Cонгох</option>
-                                                <option>option 1</option>
-                                                <option>option 2</option>
-                                                <option>option 3</option>
-                                                <option>option 4</option>
+                                            <select class="form-control m-b" name="category">
+                                                 <option>Cонгох</option>
+                                                    <?php foreach($category as $cat) : ?>
+                                                        <option value="<?php echo $cat['id']; ?>"><?php echo $cat['name'];?></option>
+                                                    <?php endforeach; ?>
                                             </select>
                                         </div>
                                         <div class="form-group col-lg-6">
                                             <label>Дугаар</label>
-                                            <select class="form-control m-b" name="account">
+                                            <select class="form-control m-b" name="number">
                                                 <option>Cонгох</option>
-                                                <option>option 1</option>
-                                                <option>option 2</option>
-                                                <option>option 3</option>
-                                                <option>option 4</option>
+                                            <?php for($i = 1; $i <= 100; $i++) { ?>
+                                                <option value="<?php echo $i; ?>"><?php echo $i; ?></option>
+                                            <?php } ?>
                                             </select>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="form-group col-lg-6">
                                             <label>Дэс дугаар</label>
-                                            <select class="form-control m-b" name="account">
+                                            <select class="form-control m-b" name="sub_number">
                                                 <option>Cонгох</option>
-                                                <option>1</option>
-                                                <option>2</option>
-                                                <option>3</option>
-                                                <option>4</option>
-                                                <option>5</option>
+                                            <?php for($i = 1; $i <= 100; $i++) { ?>
+                                                <option value="<?php echo $i; ?>"><?php echo $i; ?></option>
+                                            <?php } ?>
                                             </select>
                                         </div>
                                         <div class="form-group col-lg-6">
@@ -451,31 +257,38 @@
                                     <div class="row">
                                         <div class="form-group col-lg-12">
                                             <label>Бодлогын асуулт</label>
-                                            <div class="summernote">
-                                                <h3>Hello Jonathan! </h3>
-                                                <p>dummy text of the printing and typesetting industry. <strong>Lorem Ipsum has been the dustrys</strong> standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
-                                                    <br/><br/>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.
-                                                    recently with.</p><p>Mark Smith
-                                                </p>
-                                            </div>
+                                             <textarea name="task" id="editor1" rows="10" cols="80">
+                                                Бодлогын асуулт энд оруулна уу...
+                                            </textarea>
                                         </div>
                                     </div>
+                                     <div class="form-group">
+                                        <label for="exampleInputPassword1">Зураг хавсаргах</label>
+                                        <input type="file" name="files[]" multiple/>
+                                    </div>
                                     <div class="row">
-                                        <div class="form-group col-lg-6">
-                                            <label>Хариулт</label>
-                                            <div class="summernote1">
-                                                <h4>It is a long established fact</h4>
-                                                <p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for lorem ipsum will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)</p><p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for lorem ipsum will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)with.</p>
+                                        <div class="col-12 col-lg-12" id="answers">
+                                            <div class="form-group col-lg-8">
+                                                <label for="question">Хариулт</label>
+                                                <textarea name="answers[]" id="editor2" rows="5" cols="80">
+                                                    Хариултыг энд оруулна уу...
+                                                </textarea>
                                             </div>
-                                        </div>
-                                        <div class="form-group col-lg-6" style="margin-top: 25px;">
-                                            <button id="addbutton" class="btn btn-success btn-circle" type="button"><i class="fa fa-plus"></i></button>
+                                            <div class="form-group col-lg-4">
+                                                <button id="addbutton" class="btn btn-rounded-circle btn-success" style="margin-top: 30px;">+</button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="text-right m-t-xs">
-                                <a class="btn btn-success submitWizard" href="#">Хадгалах</a>
+                            <script>
+                                // Replace the <textarea id="editor1"> with a CKEditor
+                                // instance, using default configuration.
+                                CKEDITOR.replace( 'editor1' );
+                                CKEDITOR.replace( 'editor2' );
+                            </script>
+                            <div class="text-left m-t-xs">
+                                 <button type="submit" class="btn btn-success">Хадгалах</button>
                             </div>
                         </div>
                     </form>
@@ -487,125 +300,13 @@
     </div>
 
     <!-- Right sidebar -->
-    <div id="right-sidebar" class="animated fadeInRight">
-
-        <div class="p-m">
-            <button id="sidebar-close" class="right-sidebar-toggle sidebar-button btn btn-default m-b-md"><i class="pe pe-7s-close"></i>
-            </button>
-            <div>
-                <span class="font-bold no-margins"> Analytics </span>
-                <br>
-                <small> Lorem Ipsum is simply dummy text of the printing simply all dummy text.</small>
-            </div>
-            <div class="row m-t-sm m-b-sm">
-                <div class="col-lg-6">
-                    <h3 class="no-margins font-extra-bold text-success">300,102</h3>
-
-                    <div class="font-bold">98% <i class="fa fa-level-up text-success"></i></div>
-                </div>
-                <div class="col-lg-6">
-                    <h3 class="no-margins font-extra-bold text-success">280,200</h3>
-
-                    <div class="font-bold">98% <i class="fa fa-level-up text-success"></i></div>
-                </div>
-            </div>
-            <div class="progress m-t-xs full progress-small">
-                <div style="width: 25%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="25" role="progressbar"
-                     class=" progress-bar progress-bar-success">
-                    <span class="sr-only">35% Complete (success)</span>
-                </div>
-            </div>
-        </div>
-        <div class="p-m bg-light border-bottom border-top">
-            <span class="font-bold no-margins"> Social talks </span>
-            <br>
-            <small> Lorem Ipsum is simply dummy text of the printing simply all dummy text.</small>
-            <div class="m-t-md">
-                <div class="social-talk">
-                    <div class="media social-profile clearfix">
-                        <a class="pull-left">
-                            <img src="images/a1.jpg" alt="profile-picture">
-                        </a>
-
-                        <div class="media-body">
-                            <span class="font-bold">John Novak</span>
-                            <small class="text-muted">21.03.2015</small>
-                            <div class="social-content small">
-                                Injected humour, or randomised words which don't look even slightly believable.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="social-talk">
-                    <div class="media social-profile clearfix">
-                        <a class="pull-left">
-                            <img src="images/a3.jpg" alt="profile-picture">
-                        </a>
-
-                        <div class="media-body">
-                            <span class="font-bold">Mark Smith</span>
-                            <small class="text-muted">14.04.2015</small>
-                            <div class="social-content">
-                                Many desktop publishing packages and web page editors.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="social-talk">
-                    <div class="media social-profile clearfix">
-                        <a class="pull-left">
-                            <img src="images/a4.jpg" alt="profile-picture">
-                        </a>
-
-                        <div class="media-body">
-                            <span class="font-bold">Marica Morgan</span>
-                            <small class="text-muted">21.03.2015</small>
-
-                            <div class="social-content">
-                                There are many variations of passages of Lorem Ipsum available, but the majority have
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="p-m">
-            <span class="font-bold no-margins"> Sales in last week </span>
-            <div class="m-t-xs">
-                <div class="row">
-                    <div class="col-xs-6">
-                        <small>Today</small>
-                        <h4 class="m-t-xs">$170,20 <i class="fa fa-level-up text-success"></i></h4>
-                    </div>
-                    <div class="col-xs-6">
-                        <small>Last week</small>
-                        <h4 class="m-t-xs">$580,90 <i class="fa fa-level-up text-success"></i></h4>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-6">
-                        <small>Today</small>
-                        <h4 class="m-t-xs">$620,20 <i class="fa fa-level-up text-success"></i></h4>
-                    </div>
-                    <div class="col-xs-6">
-                        <small>Last week</small>
-                        <h4 class="m-t-xs">$140,70 <i class="fa fa-level-up text-success"></i></h4>
-                    </div>
-                </div>
-            </div>
-            <small> Lorem Ipsum is simply dummy text of the printing simply all dummy text.
-                Many desktop publishing packages and web page editors.
-            </small>
-        </div>
-
-    </div>
 
     <!-- Footer-->
     <footer class="footer">
         <span class="pull-right">
-            Example text
+            ESH.MN
         </span>
-        Company 2015-2020
+        &copy; 2019
     </footer>
 
 </div>
@@ -627,28 +328,24 @@
 <script src="../assets/adminv2/scripts/homer.js"></script>
 
 <script>
-
-    $(function () {
-
-        // Initialize summernote plugin
-        $('.summernote').summernote();
-        $('.summernote1').summernote({
-            toolbar: [
-                ['headline', ['style']],
-                ['style', ['bold', 'italic', 'underline', 'superscript', 'subscript', 'strikethrough', 'clear']],
-                ['textsize', ['fontsize']],
-                ['alignment', ['ul', 'ol', 'paragraph', 'lineheight']],
-            ]
+        $(document).ready(function(){
+            var wrapper = $("#answers");
+            var x = 1;
+            var y = 3;
+            $("#addbutton").click(function(e){
+                e.preventDefault();
+                if (x < 5 ) {
+                    x++;
+                    $(wrapper).append('<div class="form-group col-lg-8"><textarea name="answers[]" id="editor'+y+'" rows="5" cols="80">Хариултыг энд оруулна уу...</textarea></div><div class="form-group col-lg-4"><button onclick="javascript:removeElement("editor'+y+'");  id="remove'+y+'" class="btn btn-rounded-circle btn-danger" style="margin-top: 30px;">-</button></div>');
+                    CKEDITOR.replace( 'editor' + y);
+                    y++;
+                } else 
+                {
+                    alert('Hello! :)');
+                }
+            });
         });
-
-        $('.summernote2').summernote({
-            airMode: true,
-        });
-
-    });
-
-</script>
-
+    </script>
 
 <script>
 

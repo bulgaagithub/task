@@ -67,10 +67,25 @@
                                      Remember login
                                 <p class="help-block small">(if this is a private computer)</p>
                             </div> -->
+                            <p id="captImg"><?php echo $captchaImg; ?></p>
+                            <div class="form-group">
+                                <label class="control-label" for="password">Нэвтрэх код</label>
+                                <input type="text" name="captcha" class="form-control" placeholder="Баталгаажуулах код оруулна уу..." />
+                            </div> 
                             <button class="btn btn-success btn-block">Нэвтрэх</button>
                             <a class="btn btn-default btn-block" href="#">Бүртгүүлэх</a>
                         </form>
                 </div>
+                 <?php
+                                if ($this->session->flashdata('captcha_error_msg') == NULL) {
+                                    
+                                } else {
+                                    echo '<div class="alert alert-danger">
+                                        <i class="fa fa-bolt"></i>';
+                                    echo $this->session->flashdata('captcha_error_msg');
+                                    echo '</div>';
+                                }
+                            ?>     
             </div>
         </div>
     </div>

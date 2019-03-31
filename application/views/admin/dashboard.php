@@ -121,11 +121,6 @@
                         <li class="summary"><a href="#">See All Messages</a></li>
                     </ul>
                 </li>
-                <li>
-                    <a href="#" id="sidebar" class="right-sidebar-toggle">
-                        <i class="pe-7s-upload pe-7s-news-paper"></i>
-                    </a>
-                </li>
                 <li class="dropdown">
                     <a href="signin/signout">
                         <i class="pe-7s-upload pe-rotate-90"></i>
@@ -172,31 +167,25 @@
         </div>
 
         <ul class="nav" id="side-menu">
-            <li class="active">
-                <a href="index.html"> <span class="nav-label">Dashboard</span> <span class="label label-success pull-right">v.1</span> </a>
-            </li>
-            <li>
-                <a href="analytics.html"> <span class="nav-label">Analytics</span><span class="label label-warning pull-right">NEW</span> </a>
-            </li>
             <li>
                 <a href="#"><span class="nav-label">Математик</span><span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level">
                     <li><a href="math">Бодлого</a></li>
-                    <li><a href="typography.html">Ангилал</a></li>
+                    <li><a href="math/category">Ангилал</a></li>
                 </ul>
             </li>
             <li>
                 <a href="#"><span class="nav-label">Физик</span><span class="fa arrow"></span> </a>
                 <ul class="nav nav-second-level">
-                    <li><a href="contacts.html">Бодлого</a></li>
-                    <li><a href="projects.html">Ангилал</a></li>
+                    <li><a href="physics">Бодлого</a></li>
+                    <li><a href="physics/category">Ангилал</a></li>
                 </ul>
             </li>
             <li>
                 <a href="#"><span class="nav-label">Хими</span><span class="fa arrow"></span> </a>
                 <ul class="nav nav-second-level">
-                    <li><a href="chartjs.html">Бодлого</a></li>
-                    <li><a href="flot.html">Ангилал</a></li>
+                    <li><a href="chemistry">Бодлого</a></li>
+                    <li><a href="chemistry/category">Ангилал</a></li>
                 </ul>
             </li>
         </ul>

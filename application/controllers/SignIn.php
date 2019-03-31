@@ -26,11 +26,56 @@ class SignIn extends CI_Controller {
 		$this->load->helper('form');
     	$this->load->library('form_validation');
     	$this->load->library('session');
+	 	// Load the captcha helper
+        $this->load->helper('captcha');
 	}
 	public function index()
 	{
-		$this->load->view('admin/login');
+
+        // Captcha configuration
+        $config = array(
+            'img_path'      => 'captcha_images/',
+            'img_url'       => base_url().'captcha_images/',
+            'font_path'     => 'system/fonts/texb.ttf',
+            'img_width'     => '160',
+            'img_height'    => 50,
+            'word_length'   => 4,
+            'font_size'     => 18,
+            'pool'			=> '0123456789'
+        );
+        $captcha = create_captcha($config);
+        
+        // Unset previous captcha and set new captcha word
+        $this->session->unset_userdata('captchaCode');
+        $this->session->set_userdata('captchaCode', $captcha['word']);
+        
+        // Pass captcha image to view
+        $data['captchaImg'] = $captcha['image'];
+        
+        // Load the view
+		$this->load->view('admin/login',$data);
 	}
+
+	public function refresh(){
+        // Captcha configuration
+        $config = array(
+            'img_path'      => 'captcha_images/',
+            'img_url'       => base_url().'captcha_images/',
+            'font_path'     => 'system/fonts/texb.ttf',
+            'img_width'     => '160',
+            'img_height'    => 50,
+            'word_length'   => 8,
+            'font_size'     => 18
+        );
+        $captcha = create_captcha($config);
+        
+        // Unset previous captcha and set new captcha word
+        $this->session->unset_userdata('captchaCode');
+        $this->session->set_userdata('captchaCode',$captcha['word']);
+        
+        // Display captcha image
+        echo $captcha['image'];
+    }
 
 	public function signin() {
 		$this->form_validation->set_rules('username', 'Username', 'required');
@@ -42,9 +87,20 @@ class SignIn extends CI_Controller {
 		}
 		else
 		{
-			$username = $this->input->post('username');
-			$password = $this->input->post('password');
-		    $this->admin_model->signin($username,$password);
+			// If captcha form is submitted
+		    $inputCaptcha = $this->input->post('captcha');
+		    $sessCaptcha = $this->session->userdata('captchaCode');
+		    if($inputCaptcha === $sessCaptcha){
+		    	$username = $this->input->post('username');
+				$password = $this->input->post('password');
+			    $this->admin_model->signin($username,$password);
+		    }
+		    else
+		    {
+		    	$this->session->set_flashdata('captcha_error_msg', ' Баталгаажуулах код тохирохгүй байна !!!');
+		    	redirect('signin');
+		    }
+			
 		}
 	}
 
@@ -74,10 +130,11 @@ class SignIn extends CI_Controller {
 	public function signout() {
 		// Removing session data
 		$sess_array = array(
-		'username' => ''
+		'id'		=>'',
+		'username' 	=> ''
 		);
 		$this->session->unset_userdata('signin', $sess_array);
-		$data['message_display'] = 'Successfully Logout';
+		$data['message_display'] = 'Success logout.';
 		redirect('/signin');
 	}
 
